@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+body{
+    padding-left: 17rem;
+    
+    
+}
+.LeftMenu{
+    font-weight: bold;
+    background-color:#BD5D38 ;
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.LeftMenu ul {
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2;
+}
+.LeftMenu ul li{
+    font-family: 'Mulish', sans-serif;
+    color: #E1B6A5;
+    font-weight: 700;
+}
+.LeftMenu ul li:hover{
+    cursor: pointer;
+    color: #fff;
+    
+}
+.LeftMenu ul .Resim{
+    margin-bottom: 10px;
+    width: 160px;
+    height: 160px;
+    border:0.5rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.RightMenu{
+   
+    display: flex;
+    flex-direction: column;
+}
+.RightMenu .About{
+    margin-left: 2rem;
+    height: 707px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.RightMenu .About .name{
+    color: #343A40;
+    font-size: 100px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    
+}
+.RightMenu .About .second-name{
+    color:#BD5D38;
+    font-size: 100px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 800;
+    margin-left: 10px;
+    margin: 0;
+    
+}
+.RightMenu .About .address{
+    color: #343A40;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.RightMenu .About .mail{
+    color: #BD5D38;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.RightMenu .About .mail:hover{
+    cursor: pointer;
+}
+.RightMenu .About .details{
+    color: #6C757D;
+    margin-top: 30px;
+    line-height: 1.5;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+.RightMenu .About .icon{
+    display: flex;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.RightMenu .About .icon li{
+    margin-right: 20px;
+}
+.m-0{
+    margin: 0;
+}
+hr{
+    margin-right: 2rem;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 0.25;
+   
+}
+.RightMenu .Experience{
+    margin-left: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    height: 100vh;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.RightMenu .Experience .h1{
+    font-weight: bold;
+    font-size: 60px;
+    color: #343A40;
+    margin-bottom: 80px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.RightMenu .Experience .senior-web-developer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    
+}
+.RightMenu .Experience .senior-web-developer .h2-1{
+    font-weight: bold;
+    font-size: 25px;
+    color:#343A40;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
+    
+}
+.RightMenu .Experience .senior-web-developer .date1{
+    color: #BD5D38;
+    margin-right: 5rem;
+    font-family: 'Mulish', sans-serif;
+}
+.RightMenu .Experience .intelicted-solution-1 {
+    color: #6C757D;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+
+.RightMenu .Experience .details2{
+    margin-bottom: 40px;
+    font-family: 'Mulish', sans-serif;
+    color: #6C757D;
+}
+
+.RightMenu .Experience .web-developer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.RightMenu .Experience .web-developer .h2-1{
+    font-weight: bold;
+    font-size: 25px;
+    color:#343A40;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
+
+}
+
+.RightMenu .Experience .web-developer .date1{
+    color: #BD5D38;
+    margin-right: 5rem;
+    font-family: 'Mulish', sans-serif;
+}
+.RightMenu .Experience .intelicted-solution-2 {
+    color: #6C757D;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+.RightMenu .Experience .details3{
+    margin-bottom: 40px;
+    font-family: 'Mulish', sans-serif;
+    color: #6C757D;
+}
+.RightMenu .Experience .junior-web-designer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.RightMenu .Experience .junior-web-designer .h2-1{
+    font-weight: bold;
+    font-size: 25px;
+    color:#343A40;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
+
+}
+.RightMenu .Experience .junior-web-designer .date1{
+    color: #BD5D38;
+    margin-right: 5rem;
+    font-family: 'Mulish', sans-serif;
+}
+.RightMenu .Experience .media-productions{
+    color: #6C757D;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+.RightMenu .Experience .details4{
+    margin-bottom: 40px;
+    font-family: 'Mulish', sans-serif;
+    color: #6C757D;
+}
+.RightMenu .Experience .web-designer-intern{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.RightMenu .Experience .web-designer-intern .h2-1{
+    font-weight: bold;
+    font-size: 25px;
+    color:#343A40;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
+}
+.RightMenu .Experience .web-designer-intern .date1{
+    color: #BD5D38;
+    margin-right: 5rem;
+    font-family: 'Mulish', sans-serif;
+}
+.RightMenu .education{
+    margin-left: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    height: 20rem;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.RightMenu .education .h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: #343A40;
+    margin-bottom: 40px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.RightMenu .education .university{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.RightMenu .education .university .h2-1{
+    font-weight: bold;
+    font-size: 25px;
+    color:#343A40;
+
+}
+.RightMenu .education .university .date1{
+    color: #BD5D38;
+    margin-right: 5rem;
+    font-family: 'Mulish', sans-serif;
+}
+.RightMenu .education .departmant{
+    color: #6C757D;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+.RightMenu .education .details{
+    font-family: 'Mulish', sans-serif;
+    color: #6C757D;
+    margin-bottom: 10px;;
+}
+.RightMenu .education .university2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.RightMenu .education .university2 .h2-1{
+    font-weight: bold;
+    font-size: 25px;
+    color:#343A40;
+
+}
+.RightMenu .education .university2 .date1{
+    color: #BD5D38;
+    margin-right: 5rem;
+    font-family: 'Mulish', sans-serif;
+    
+}
+.RightMenu .education .departmant{
+    color: #6C757D;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+.RightMenu .education .details2{
+    font-family: 'Mulish', sans-serif;
+    color: #6C757D;
+}
+.RightMenu .skills{
+    margin-left: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    height: 20rem;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.RightMenu .skills .H1{
+    font-weight: bold;
+    font-size: 40px;
+    color: #343A40;
+    margin-bottom: 40px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.RightMenu .skills .h1{
+    color: #6C757D;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}.RightMenu .skills .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: #6C757D; 
+}
+.RightMenu .skills .h2{
+    color: #6C757D;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;   
+}
+.RightMenu .skills .work-flow-list .li1{
+    list-style: none;
+}
+
+.RightMenu .skills .work-flow-list .li1{
+    color: #6C757D;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    
+}
+.RightMenu .interests{
+    margin-left: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    height: 20rem;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.RightMenu .interests .h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #343A40;
+    margin-bottom: 40px;
+}
+.RightMenu .interests .details{
+
+}
+.RightMenu .awards{
+    margin-left: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    height: 20rem;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.RightMenu .awards .h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #343A40;
+    margin-bottom: 40px;
+}
+.RightMenu .awards ul li{
+    color: #6C757D;
+    font-size: 20px;
+    list-style: none;
+}
