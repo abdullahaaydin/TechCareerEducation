@@ -976,17 +976,21 @@ var products = [
     ]
 
 
-    var filteredProducts = products.filter(x => x.unitPrice > 30)
-    console.log(filteredProducts);
+    var filteredProducts = products.filter(x => x.unitPrice > 30 && x.unitPrice < 100)
+    console.log("sonuc",filteredProducts);
 
     var filteredProducts2 = products.filter(x => x.name.startsWith("A"))
     console.log(filteredProducts2);
 
     var filteredProducts3 = products.filter(x => x.name.endsWith("a"))
     console.log(filteredProducts3);
+    
+    var enYuksek = products.reduce((a,b) => unitPrice.Math(a,b))
 
-    var product = products.find(q => q.discontinued);
-    console.log(product.discontinued);
+    console.log("a", enYuksek)
+
+    var product = products.find(q => q.unitPrice);
+    console.log("isim",product.name);
 
     var sortedProducts = products.sort((a,b) => a.unitPrice - b.unitPrice)
    console.log("sortedProducts", sortedProducts);

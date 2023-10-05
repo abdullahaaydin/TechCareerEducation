@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        #Saha {
+            display: flex;
+            flex-direction: column;
+            background-color: darkgreen;
+            position: relative;
+            padding: 10px;
+        } 
+        body {
+            background-color: lightgray;
+        }
+        #Horse1 {
+            position: relative;
+            width: 160px;
+            height: 100px;
+        }
+        #Horse2 {
+            position: relative;
+            width: 160px;
+            height: 100px;
+        }
+        #Horse3 {
+            position: relative;
+            width: 160px;
+            height: 100px;
+        }
+        #Control {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #Sonuç {
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            font-size: 1.5rem;
+            width: 700px;
+            height: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #Button {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+        }
+        #Finishing {
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            right: 30px;
+            border-left: 10px dashed white
+        }
+
+    </Style>
+</head>
+<body>
+
+    <div id = "Saha">
+        <img id = "Horse1" src="https://raw.githubusercontent.com/kodfun/AtYarisi/master/at1.gif" alt="BOLD PILOT">
+        <img id = "Horse2" src="https://raw.githubusercontent.com/kodfun/AtYarisi/master/at2.gif" alt="ŞİMŞEK">
+        <img id = "Horse3" src="https://raw.githubusercontent.com/kodfun/AtYarisi/master/at3.gif" alt="RÜZGAR">
+        <div id="Finishing"></div>
+    </div>
+
+    <div id = "Control">
+
+        <div id="Sonuç">100M KOŞUSUNA HOŞGELDİNİZ. ATLAR YARIŞA HAZIR.</div>
+        <button id="buton" onclick="start()">START</button>
+
+    </div>     
+</body>
+    <script>
+
+        const sonuc = document.getElementById("Sonuç");
+        const buton = document.getElementById("buton");
+        const finishing = document.getElementById("Finishing");
+        const horse1 = document.getElementById("Horse1");
+        const horse2 = document.getElementById("Horse2");
+        const horse3 = document.getElementById("Horse3");
+        let x1 = 0 , x2 = 0 , x3 = 0;
+        let time = null;
+
+        function random() {
+            return Math.random() * 10
+        } 
+        function go() {
+
+            x1 += random();
+            x2 += random();
+            x3 += random();
+            horse1.style.left = x1 + "px";
+            horse2.style.left = x2 + "px";
+            horse3.style.left = x3 + "px";
+            
+            let onde = ondeki();
+            sonuc.textContent = onde.alt + " YARIŞI ÖNDE GÖTÜRÜYOR.";
+
+            if (onde.offsetLeft + onde.width > finishing.offsetLeft) {
+                sonuc.textContent = onde.alt + " YARIŞI KAZANDI.";
+                final();
+      }
+
+            
+            
+        }
+        function final() {
+            clearInterval(time);
+            time = null;
+            buton.textContent = "Yeni Yarış"
+            
+        }
+
+        buton.onclick = function() {
+      if (buton.textContent == "Yeni Yarış") {
+        x1 = x2 = x3 = 0;
+        horse1.style.left = horse2.style.left = horse3.style.left = "0px";
+        buton.textContent = "START";
+        sonuc.textContent = " 100M KOŞUSUNA HOŞGELDİNİZ. ATLAR YARIŞA HAZIR";
+      }
+      else if (time == null) {
+        time = setInterval(go, 100);
+        buton.textContent = "DURDUR";
+      }
+      else if (buton.textContent == "DURDUR") {
+        clearInterval(time);
+        time= null;
+        buton.textContent = "DEVAM ET";
+      } 
+    };
+
+        function ondeki() {
+            let ondekiHorse = horse1;
+
+            if (horse2.offsetLeft > ondekiHorse.offsetLeft)
+            ondekiHorse = horse2;
+
+            if (horse3.offsetLeft > ondekiHorse.offsetLeft)
+            ondekiHorse = horse3;
+
+            return ondekiHorse;
+
+}
+    
+    </script>
+</html>
