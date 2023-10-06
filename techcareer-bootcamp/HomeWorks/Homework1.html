@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //HomeWork 1
+        //Question 1
+        var name = "   Çağatay Yıldız"
+        result = name.replace("   Çağatay Yıldız","ÇağatayYıldız");
+        console.log("q1",result)
+        //Question 2
+        name = "cagatay yildiz"
+        console.log("q2", name.replace("cagatay yildiz","cagatayyildiz").toUpperCase())
+        //Question 3
+        name = "*****Çağatay Yıldız"
+        console.log("q3",name.replace("*****",""))
+        //Question 4
+        name = "Çağatay  Yıldız"
+        console.log("q4",name.replace("Çağatay  ","Çağatay "))
+        //Question 5
+        name = "**Tech Career**"
+        console.log("q5", name.replace("**Tech Career**","Tech Career"))
+        //Question 6
+        name = "Tech Career"
+        text = "***" + "Tech Career" + "***"
+        console.log("q6", text)
+        //Question 7
+        name = "Tech Career Bilişim teknolojileri"
+        console.log("q7", name.substring(name.length - 1).toUpperCase())
+        //Question 8
+        name = "tech career"
+        console.log("q8-1", name.substring(0,1).toUpperCase())
+        console.log("q8-2", name.substring(5,6).toUpperCase())
+        //HomeWork 2
+         //Question 1
+            const name2 = ["T", "e", "c", "h", "C", "a", "r", "e", "e", "r"]
+            for (i = 9; i >= 0; i--) {
+                console.log(name2[i])
+    } 
+        //Question 2
+            var numbers = [-22, 5, 11, 78, -4, -250, 35, 56, 11, 24, 77, 11]
+            var positive = numbers.filter(x => x > 0)
+                console.log("sonuc",positive);
+        //Question 3
+            var MaxValue = numbers.reduce((x,y) => Math.max(x,y));
+                console.log("maxvalue",MaxValue)
+        //Question 4
+            var num = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]
+            for (i = 0 ; i <= 50 ; i += 3) {
+                console.log(num[i])
+}
+            for (i = 0 ; i <= 50 ; i += 5) {
+                console.log(num[i])
+        }
+        
+        
+</script>
+</html>
